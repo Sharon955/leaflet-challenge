@@ -59,10 +59,10 @@ d3.json(link, function(response) {
 
     var legend = L.control({position: 'bottomright'});
 
-    legend.onAdd = function (map) {
+    legend.onAdd = function () {
     
-        var div = L.DomUtil.create('div', 'info legend'),
-            grades = [0, 1, 2, 3, 4, 5],
+        var div = L.DomUtil.create('div', 'info legend');
+            grades = [0, 1, 2, 3, 4, 5];
             labels = [];
     
         // loop through our density intervals and generate a label with a colored square for each interval
